@@ -86,28 +86,51 @@
             <small class="text-muted"> Hover for Details </small>
           </label>
           <div class="checkbox-container bg-light pt-3 pl-3 pb-2">
-            <div class="custom-control custom-checkbox">
+
+            <div class="custom-control custom-checkbox mb-2">
               <input class="custom-control-input" type="checkbox" value="" id="scratch-removal">
               <label class="custom-control-label ml-2" for="scratch-removal" data-toggle="tooltip" data-placement="top"
                 title="Placeholder"> Compound/Scratch Removal </label>
             </div>
-            <div class="custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" value="" id="shampoo">
+            <div class="extra-checks mb-4" id="scratch-detail">
+              <label for="scratch-select" class="my-0"> Approx. Scratch Size </label>
+              <select class="form-control" id="scratch-select">
+                <option value="0"> Select.. </option>
+                <option value="15"> Small </option>
+                <option value="25"> Average </option>
+                <option value="35"> Big </option>
+              </select>
+            </div>
+
+            <div class="custom-control custom-checkbox mb-2">
+              <input class="custom-control-input" type="checkbox" value="30" id="shampoo">
               <label class="custom-control-label ml-2" for="shampoo" data-toggle="tooltip" data-placement="top"
                 title="Placeholder"> Carpet/Seat Shampooing </label>
             </div>
-            <div class="custom-control custom-checkbox">
+
+            <div class="custom-control custom-checkbox mb-2">
               <input class="custom-control-input" type="checkbox" value="" id="stain-removal">
               <label class="custom-control-label ml-2" for="stain-removal" data-toggle="tooltip" data-placement="top"
                 title="Placeholder"> Stain Removal </label>
             </div>
-            <div class="custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" value="" id="engine-bay-detail">
+            <div class="extra-checks mb-4" id="stain-detail">
+              <label for="stain-select" class="my-0"> Approx. Stain # </label>
+              <select class="form-control" id="stain-select">
+                <option value="0"> Select.. </option>
+                <option value="15"> Few </option>
+                <option value="25"> Some </option>
+                <option value="35"> Many </option>
+              </select>
+            </div>
+
+            <div class="custom-control custom-checkbox mb-2">
+              <input class="custom-control-input" type="checkbox" value="40" id="engine-bay-detail">
               <label class="custom-control-label ml-2" for="engine-bay-detail" data-toggle="tooltip" data-placement="top"
                 title="Placeholder"> Engine Bay Detail </label>
             </div>
-            <div class="custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" value="" id="condition">
+
+            <div class="custom-control custom-checkbox mb-2">
+              <input class="custom-control-input" type="checkbox" value="15" id="condition">
               <label class="custom-control-label ml-2" for="condition" data-toggle="tooltip" data-placement="top"
                 title="Placeholder"> Leather Surface Conditioning </label>
             </div>
@@ -119,7 +142,7 @@
 
     <div class="container text-center py-3">
       <div class="jumbotron jumbotron-fluid" id="final-price-container">
-        <h1 class="display-1"> $<span id="final-price">200</span>* </h1>
+        <h1 class="display-1"> $<span id="final-price"></span>* </h1>
         <small class="text-muted"> *Only an estimate; <span class="font-weight-bold">tip not included</span> </small>
       </div>
     </div>
