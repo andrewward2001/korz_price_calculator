@@ -46,3 +46,11 @@
 #final-price-container {
   display: none;
 }
+
+.service-level {
+  cursor: pointer;
+}
+
+.service-level:hover {
+  background: rgba(0,0,0,0.05);
+}
