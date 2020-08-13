@@ -1,0 +1,33 @@
+.selected {
+  -webkit-box-shadow: 0px 0px 30px -5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 30px -5px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 30px -5px rgba(0,0,0,0.5);
+  animation: card-shadow;
+  animation-duration: 500ms;
+}
+
+@keyframes card-shadow {
+  from {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 30px -5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 30px -5px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 30px -5px rgba(0,0,0,0.5);
+  }
+}
+
+@keyframes basic-to-middle {
+  from {
+    left: 0;
+  }
+  to {
+    
+  }
+}
+
+@keyframes deluxe-to-middle {
+
+}
