@@ -11,8 +11,8 @@
   </head>
   <body>
     <div class="container" id="step-1">
-      <h1 class="display-3">1. <span class="display-4">Select Service Level</span></h1>
-      <div class="card mb-4 service-level" id="basic-select">
+      <h1 class="display-3 text-white">1. <span class="display-4">Select Service Level</span></h1>
+      <div class="card mb-4 service-level text-white" id="basic-select">
         <div class="row no-gutters align-items-center">
           <div class="col-xl-3 pb-0 pb-xl-4 px-4 pt-4">
             <h1 class="display-4">Basic</h1>
@@ -25,7 +25,7 @@
             </p>
           </div>
           <div class="col-md-4 p-4">
-            <ul class="list-unstyled text-muted mb-0">
+            <ul class="list-unstyled text-light mb-0">
               <li> Hand Wash </li>
               <li> Interior Clean and Vacuum </li>
               <li> Tire Shine </li>
@@ -35,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div class="card mb-4 service-level" id="premium-select">
+      <div class="card mb-4 service-level text-white" id="premium-select">
         <div class="row no-gutters align-items-center">
           <div class="col-xl-3 pb-0 pb-xl-4 px-4 pt-4">
             <h1 class="display-4">Premium</h1>
@@ -48,7 +48,7 @@
             </p>
           </div>
           <div class="col-md-4 p-4">
-            <ul class="list-unstyled text-muted mb-0">
+            <ul class="list-unstyled text-light mb-0">
               <li> All Basic services, and </li>
               <li> Standard Wax </li>
               <li> Interior Dusting </li>
@@ -58,7 +58,7 @@
           </div>
         </div>
       </div>
-      <div class="card mb-4 service-level" id="deluxe-select">
+      <div class="card mb-4 service-level text-white" id="deluxe-select">
         <div class="row no-gutters align-items-center">
           <div class="col-xl-3 pb-0 pb-xl-4 px-4 pt-4">
             <h1 class="display-4">Deluxe</h1>
@@ -71,7 +71,7 @@
             </p>
           </div>
           <div class="col-md-4 p-4">
-            <ul class="list-unstyled text-muted mb-0">
+            <ul class="list-unstyled text-light mb-0">
               <li> All Premium services, and </li>
               <li> Orbital Polish </li>
               <li> Clay Bar </li>
@@ -86,12 +86,12 @@
     <div class="container py-2" id="additional-services">
       <label for="additional" class="col-form-label">
         <button class="btn btn-light" id="back-button">Back</button>
-        <div class="d-flex"><h1 class="display-3 flex-grow-1">2. <span class="display-4">Select Additional Services</span></h1></div>
-        <small class="text-muted"> Click <i data-feather="info" style="padding-top: 10px;"></i> for details </small>
+        <h1 class="display-3 text-white">2. <span class="display-4">Select Additional Services</span></h1>
+        <small class="text-light"> Click <i data-feather="info" style="padding-top: 10px;"></i> for details </small>
       </label>
       <form>
         <div class="form-group">
-          <div class="checkbox-container bg-light pt-3 pl-3 pb-2">
+          <div class="checkbox-container text-white pt-3 pl-3 pb-2">
 
             <div class="custom-control custom-checkbox mb-2">
               <input class="custom-control-input" type="checkbox" value="" id="scratch-removal">
@@ -144,14 +144,21 @@
         </div>
       </form>
       <hr />
-      <h1 class="display-3">3. <span class="display-4">Calculate Price</span></h1>
+      <h1 class="display-3 text-white">3. <span class="display-4">Calculate Price</span></h1>
       <button class="btn btn-success btn-massive d-block mx-auto mt-2" id="calculator"> Calculate Price </button>
     </div>
 
-    <div class="container text-center py-3">
-      <div class="jumbotron jumbotron-fluid" id="final-price-container">
-        <h1 class="display-1"> $<span id="final-price"></span>* </h1>
-        <small class="text-muted"> *<span class="font-weight-bold">All prices are estimates.</span> Tip not included.</small>
+    <div class="container py-3">
+      <div class="jumbotron jumbotron-fluid text-white" id="final-price-container">
+        <div class="row">
+          <div class="col-md-8 text-center">
+            <h1 class="display-1"> $<span id="final-price"></span>* </h1>
+            <small class="text-muted"> *<span class="font-weight-bold">All prices are estimates.</span> Tip not included.</small>
+          </div>
+          <div class="col-md-4">
+            <p class="font-weight-bold">Summary</p>
+          </div>
+        </div>
       </div>
     </div>
 
