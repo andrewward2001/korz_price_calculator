@@ -21,6 +21,7 @@ function initializeDrawerPress() {
   $(document).on('click', '#back-button', () => {
     $('#step-1').show(1000)
     $('#additional-services, #final-price-container').hide(1000)
+    finalPrice = 0
   })
 }
 
