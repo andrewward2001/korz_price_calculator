@@ -1,0 +1,16 @@
+.custom-control {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.custom-control-label::before, 
+.custom-control-label::after {
+  top: .4rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.checkbox-container {
+  font-size: 1.3rem;
+}
