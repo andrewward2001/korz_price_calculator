@@ -11,8 +11,8 @@
   </head>
   <body>
 
-    <div class="container">
-      <div class="row justify-content-center my-5">
+    <div class="container py-3">
+      <div class="row justify-content-center">
         <div class="col-md-3 col-sm-12 card text-center mx-4 mb-4 px-0" id="basic-card">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal"> Basic </h4>
@@ -70,37 +70,52 @@
       </div>
     </div>
 
-    <div class="container">
+    <hr />
+
+    <div class="container py-2" id="additional-services">
       <form>
         <div class="form-group row">
           <label for="additional" class="col-sm-3 col-form-label">
             <h4 class="font-weight-normal my-0"> Additional Services </h4>
             <small class="text-muted"> Hover for Details </small>
           </label>
-          <div class="col-sm-9 checkbox-container bg-light pt-3">
+          <div class="col-sm-9 checkbox-container bg-light pt-2">
             <div class="custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" value="" id="scratchRemoval">
-              <label class="custom-control-label ml-2" for="scratchRemoval"> Compound/Scratch Removal </label>
+              <input class="custom-control-input" type="checkbox" value="" id="scratch-removal">
+              <label class="custom-control-label ml-2" for="scratch-removal" data-toggle="tooltip" data-placement="top"
+                title="Placeholder"> Compound/Scratch Removal </label>
             </div>
             <div class="custom-control custom-checkbox">
               <input class="custom-control-input" type="checkbox" value="" id="shampoo">
-              <label class="custom-control-label ml-2" for="shampoo"> Carpet/Seat Shampooing </label>
+              <label class="custom-control-label ml-2" for="shampoo" data-toggle="tooltip" data-placement="top"
+                title="Placeholder"> Carpet/Seat Shampooing </label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" value="" id="stainRemoval">
-              <label class="custom-control-label ml-2" for="stainRemoval"> Stain Removal </label>
+              <input class="custom-control-input" type="checkbox" value="" id="stain-removal">
+              <label class="custom-control-label ml-2" for="stain-removal" data-toggle="tooltip" data-placement="top"
+                title="Placeholder"> Stain Removal </label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" value="" id="engineBayDetail">
-              <label class="custom-control-label ml-2" for="engineBayDetail"> Engine Bay Detail </label>
+              <input class="custom-control-input" type="checkbox" value="" id="engine-bay-detail">
+              <label class="custom-control-label ml-2" for="engine-bay-detail" data-toggle="tooltip" data-placement="top"
+                title="Placeholder"> Engine Bay Detail </label>
             </div>
             <div class="custom-control custom-checkbox">
               <input class="custom-control-input" type="checkbox" value="" id="condition">
-              <label class="custom-control-label ml-2" for="condition"> Leather Surface Conditioning </label>
+              <label class="custom-control-label ml-2" for="condition" data-toggle="tooltip" data-placement="top"
+                title="Placeholder"> Leather Surface Conditioning </label>
             </div>
           </div>
         </div>
       </form>
+      <button class="btn btn-success btn-massive d-block mx-auto mt-2" id="calculator"> Calculate Price </button>
+    </div>
+
+    <div class="container text-center py-3">
+      <div class="jumbotron jumbotron-fluid" id="final-price-container">
+        <h1 class="display-1"> $<span id="final-price">200</span>* </h1>
+        <small class="text-muted"> *Only an estimate; <span class="font-weight-bold">tip not included</span> </small>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>

@@ -35,3 +35,14 @@
 .checkbox-container {
   font-size: 1.3rem;
 }
+
+.btn-massive {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+#additional-services,
+#calculator-container,
+#final-price-container {
+  display: none;
+}
