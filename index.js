@@ -5,6 +5,7 @@ const dropdowns = ['#scratch-select', '#stain-select']
 
 $(document).ready(() => {
   $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="popover"]').popover()
   initializeDrawerPress()
   initializeCalculatorPress()
   initializeDetailListeners()
@@ -12,8 +13,14 @@ $(document).ready(() => {
 })
 
 function initializeDrawerPress() {
-  $('#basic-select').click( () => {
+  $('#basic-select, #premium-select, #deluxe-select').click( () => {
     $('#additional-services').show(1000)
+    $('#step-1').hide(1000)
+  })
+
+  $(document).on('click', '#back-button', () => {
+    $('#step-1').show(1000)
+    $('#additional-services').hide(1000)
   })
 }
 
